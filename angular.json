@@ -125,5 +125,8 @@
         }
       }
     }},
-  "defaultProject": "docs"
+  "defaultProject": "docs",
+  "cli": {
+    "packageManager": "npm"
+  }
 }
