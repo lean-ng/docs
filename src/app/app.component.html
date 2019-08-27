@@ -1,6 +1,18 @@
 <header class="flex bg-teal-500 text-white p-4">
   <div class="flex items-center">
-    <img class="h-8 w-8 mr-2" src="/assets/logo.png" alt="Lean Stack Logo">
-    <h1 class="text-xl font-semibold tracking-tight">Lean Angular Docs</h1>
+    <a routerLink="/" class="flex">
+      <img class="h-8 w-8 mr-2" src="/assets/logo.png" alt="Lean Stack Logo">
+      <h1 class="text-xl font-semibold tracking-tight">Lean Angular</h1>
+    </a>
+  </div>
+  <div class="flex items-center ml-4">
+    <div class="text-sm">
+      <a routerLink="/docs/" class="block text-teal-200 hover:text-white mr-4">
+        Docs
+      </a>
+    </div>
   </div>
 </header>
+<main class="container mx-auto mt-2">
+  <router-outlet></router-outlet>
+</main>
