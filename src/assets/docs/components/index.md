@@ -1,3 +1,6 @@
+## Content Projection
+
+* https://blog.angular-university.io/angular-ng-content/
 
 ## Dynamic Components
 
