@@ -1,4 +1,8 @@
 
+## Dynamic Components
+
+* https://medium.com/front-end-weekly/dynamically-add-components-to-the-dom-with-angular-71b0cb535286
+
 ## Containers and Templates
 
 * https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/
