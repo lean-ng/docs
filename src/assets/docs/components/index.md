@@ -2,8 +2,9 @@
 
 * https://blog.angular-university.io/angular-ng-content/
 
-## Dynamic Components
+## Dynamic Content/Components
 
+* https://denys.dev/2016-11-27/dynamic-content-in-angular/
 * https://medium.com/front-end-weekly/dynamically-add-components-to-the-dom-with-angular-71b0cb535286
 
 ## Containers and Templates
