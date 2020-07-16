@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewerComponent implements OnInit {
 
+  uri = 'assets/docs/debugging/index.md';
+
   constructor() { }
 
   ngOnInit(): void {
