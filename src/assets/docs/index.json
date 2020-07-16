@@ -1,5 +1,19 @@
 [
   {
+    "title": "Components",
+    "path": "/components",
+    "articles": [
+      {
+        "title": "Templates",
+        "resource": "templates.md"
+      },
+      {
+        "title": "Lifecycle",
+        "resource": "lifecycle.md"
+      }
+    ]
+  },
+  {
     "title": "Debugging",
     "link": "/debugging"
   },
