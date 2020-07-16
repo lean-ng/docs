@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-viewer',
-  templateUrl: './viewer.component.html',
-  styleUrls: ['./viewer.component.css']
+  selector: 'docs-viewer',
+  templateUrl: './viewer.component.html'
 })
 export class ViewerComponent implements OnInit {
 
