@@ -1,10 +1,10 @@
-# Debugging
+## Debugging
 
 > Tipps und Tricks zum Thema Debugging von Angular Anwendungen
 
-## Entwickler-Tools der Browser (F12)
+### Entwickler-Tools der Browser (F12)
 
-### Allgemeine Utilities unabhängig von Angular
+#### Allgemeine Utilities unabhängig von Angular
 
 Ein im Elemente-Baum (Elements-Tab im Chrome, Inspector-Tab bei Firefox) ausgewähltes DOM-Element steht auf der Entwickler-Console unter dem Variablen-Namen ```$0``` zur Verfügung.
 
@@ -16,7 +16,7 @@ Links:
 * [Chrome Console Utilities](https://developers.google.com/web/tools/chrome-devtools/console/utilities)
 * [Firefox CLI](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/The_command_line_interpreter)
 
-### Angular Utilities
+#### Angular Utilities
 
 Angular stellt das globale Objekt ```ng``` bereit. Die ```probe```-Methode dieses Objektes gibt uns für ein DOM-Element (also zum Beispiel das aktuelle ```$0``` von oben) das DebugElement zurück. Darüber lässt sich
 nun die Instanz der zugehörigen Component analysieren (Property ```componentInstance```) oder zum Beispiel
@@ -54,11 +54,11 @@ man Daten von Komponenten manuell geändert hat und die Auswirkungen auf den DOM
     appRef = ng.probe($0).injector.get(ng.coreTokens.ApplicationRef);
     appRef.tick();
 
-### Debugging von Source-Code im Browser
+#### Debugging von Source-Code im Browser
 
 Die TypeScript-Sourcen findet man im Webpack-Ordner in den Browser-Developertools (beim Chrome im Sources-Tab - dort noch über den Dot-Knoten zum ```src```-Ordner wechseln, beim Firefox im Debugger-Tab). Jetzt lassen sich ganz normal Haltepunkte setzen, Variablen analysieren und die Methoden im Call-Stack einsehen.
 
-## Augury
+### Augury
 
 Augury ist eine Browser-Erweiterung, die mittlerweile sowohl für Firefox und Chrome bereit steht. Der Link
 [augury.angular.io](https://augury.angular.io) leitet direkt weiter zur Entwickler-Seite bei [rangle.io](https://augury.rangle.io/) mit den Links zu den jeweiligen Browser-Addon Stores. Ich selbst nutze Augury produktiv nur noch selten (auch weil es immer wieder einen leichten buggy Eindruck hinterlässt). In meinen Trainings allerdings umso mehr, da man doch recht schön den Component-Tree präsentieren kann (mit State und der Möglichkeit, Events zu triggern), den Router-Tree visualisieren kann sowie die Modul-Abhängikeiten auflösen kann.
@@ -70,7 +70,7 @@ Für Infos zur weiteren Verwendung von Augury verweise ich an dieser Stelle auf 
 
 Zusatztipp eines Teilnehmers einer meiner letzten Schulungen (Berlin): die Ansicht erneuert sich nicht immer zuverlässig. Bisher habe ich das nur erreicht durch ein komplettes Schließen der Developer Tools und (!) des Browsers. Hier hilft aber ein einfacher Wechsel des Augury Farbschemas (von Hell nach Dunkel und wieder zurück). Top, vielen Dank nochmal an dieser Stelle.
 
-## Debugging über Visual Studio Code
+### Debugging über Visual Studio Code
 
 Die Visual Studio Code Erweiterung [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome). Über diese ist mittlwerweile ein komplett transparentes Debuggen von Angular Anwendungen möglich - auch(!) im Zusammenspiel mit den Debugger-Tools des Browsers. Also Haltepunkte sowie zum Beispiel Einzelschritte von Anweisungen laufen synchron sowohl im Visual Studio Code als auch im Browser mit. 
 
