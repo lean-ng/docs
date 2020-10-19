@@ -1,24 +1,34 @@
 [
   {
+    "route": "",
+    "path": "index.md",
+    "title": "Überblick"
+  },
+  {
+    "route": "components",
+    "path": "components/index.md",
     "title": "Components",
-    "path": "/components",
-    "articles": [
+    "children": [
       {
-        "title": "Templates",
-        "resource": "templates.md"
+        "route": "components/templates",
+        "path": "components/templates.md",
+        "title": "Template Syntax"
       },
       {
-        "title": "Lifecycle",
-        "resource": "lifecycle.md"
+        "route": "components/lifecycle",
+        "path": "components/lifecycle.md",
+        "title": "Lifecycle"
       }
     ]
   },
   {
-    "title": "Debugging",
-    "link": "/debugging"
+    "route": "debugging",
+    "path": "debugging/index.md",
+    "title": "Debugging"
   },
   {
-    "title": "Resources",
-    "link": "/resources"
+    "route": "resources",
+    "path": "resources/index.md",
+    "title": "Resources"
   }
 ]

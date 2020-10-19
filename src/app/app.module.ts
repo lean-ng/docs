@@ -8,12 +8,16 @@ import { appRoutes } from './app.routes';
 
 import { HomeComponent } from './core/components/home/home.component';
 import { ViewerComponent } from './docs/components/viewer/viewer.component';
+import { NavComponent } from './docs/components/nav/nav.component';
+import { ShellComponent } from './docs/components/shell/shell.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ViewerComponent
+    ViewerComponent,
+    NavComponent,
+    ShellComponent,
   ],
   imports: [
     BrowserModule,
