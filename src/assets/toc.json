@@ -1,0 +1,17 @@
+[
+  {
+    "path": "quickstart",
+    "title": "Schnellstart",
+    "children": [
+      { "path": "install", "title": "Installation" }
+    ]
+  },
+  {
+    "path": "basics",
+    "title": "Grundlagen",
+    "children": [
+      { "path": "templates", "title": "Templates" },
+      { "path": "components", "title": "Components" }
+    ]
+  }
+]

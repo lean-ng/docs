@@ -1,3 +1,16 @@
-<header class="container mx-auto px-8 mt-8">
-  <h1 class="text-3xl">Lean Angular</h1>
+<header class="px-8 py-1 border-gray-500 border-b">
+  <h1 class="text-3xl font-semibold">Lean Angular</h1>
 </header>
+<main class="container mx-auto mt-4 flex">
+  <nav>
+    <ul>
+      <li *ngFor="let item of navItems | async">
+        <span class="text-xl">{{ item.title }}</span>
+        <div class="flex flex-col">
+          <a *ngFor="let child of item.children" [routerLink]="child.path">{{ child.title }}</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</main>
