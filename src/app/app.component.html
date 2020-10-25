@@ -1,16 +1,23 @@
-<header class="px-8 py-1 border-gray-500 border-b">
+<header class="px-8 py-2 border-gray-500 border-b">
   <h1 class="text-3xl font-semibold">Lean Angular</h1>
 </header>
-<main class="container mx-auto mt-4 flex">
-  <nav>
+<main class="relative">
+  <nav class="fixed w-56 inset-y-0 mt-16 border-gray-500 border-r">
     <ul>
-      <li *ngFor="let item of navItems | async">
-        <span class="text-xl">{{ item.title }}</span>
+      <li *ngFor="let item of navItems | async" class="mt-2">
+        <span class="block text-xl pl-4 py-1">{{ item.title }}</span>
         <div class="flex flex-col">
-          <a *ngFor="let child of item.children" [routerLink]="child.path">{{ child.title }}</a>
+          <a class="block pl-8 py-1 hover:bg-gray-300"
+            *ngFor="let child of item.children"
+            [routerLink]="child.path" routerLinkActive="bg-gray-200"
+          >
+            {{ child.title }}
+          </a>
         </div>
       </li>
     </ul>
   </nav>
-  <router-outlet></router-outlet>
+  <div class="pl-64 pt-4">
+    <router-outlet></router-outlet>
+  </div>
 </main>

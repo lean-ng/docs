@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ViewerComponent } from './components/viewer/viewer.component';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
