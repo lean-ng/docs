@@ -13,5 +13,12 @@
       { "path": "templates", "title": "Templates" },
       { "path": "components", "title": "Components" }
     ]
+  },
+  {
+    "path": "dev-tooling",
+    "title": "Development Tooling",
+    "children": [
+      { "path": "debugging", "title": "Debugging" }
+    ]
   }
 ]
