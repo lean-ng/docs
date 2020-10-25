@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { map } from 'rxjs/operators';
+import { TocService } from 'src/app/services/toc.service';
 
 @Component({
   selector: 'app-viewer',
@@ -10,11 +12,13 @@ import { ActivatedRoute } from '@angular/router';
 export class ViewerComponent implements OnInit {
 
   resourceUri = '/';
+  resourcePath = '/';
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private tocSvc: TocService) { }
 
   ngOnInit(): void {
-    this.route.url.subscribe(r => console.log(r));
+    this.route.url
+      .pipe(map(uri => this.tocSvc.mapUriToPath(uri)))
+      .subscribe(path => this.resourcePath = path);
   }
-
 }

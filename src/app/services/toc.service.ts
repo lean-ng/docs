@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { UrlSegment } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { NavItem } from '../models/nav-item';
 import { TocEntry } from '../models/toc-entry';
@@ -27,4 +28,8 @@ export class TocService {
     });
   }
 
+  mapUriToPath(uri: UrlSegment[]): string {
+    // TODO: validate uri
+    return '/assets/' + uri.join('/') + '.md';
+  }
 }
