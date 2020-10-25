@@ -6,7 +6,16 @@ module.exports = {
   purge: [ './src/**/*.html' ],
   theme: {
     extend: {},
+    typography: {
+      default: {
+        css: {
+          maxWidth: '80ch'
+        },
+      },
+    },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
