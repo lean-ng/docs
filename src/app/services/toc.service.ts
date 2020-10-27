@@ -30,6 +30,7 @@ export class TocService {
 
   mapUriToPath(uri: UrlSegment[]): string {
     // TODO: validate uri
-    return '/assets/' + uri.join('/') + '.md';
+    const path = uri.length ? uri.join('/') : 'index';
+    return '/assets/' + path + '.md';
   }
 }
