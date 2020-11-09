@@ -1,5 +1,14 @@
 [
   {
+    "path": "prerequisites",
+    "title": "Voraussetzungen",
+    "children": [
+      { "path": "html", "title": "HTML, CSS, DOM" },
+      { "path": "ecmascript", "title": "ECMAScript 2015+" },
+      { "path": "typescript", "title": "TypeScript" }
+    ]
+  },
+  {
     "path": "quickstart",
     "title": "Schnellstart",
     "children": [
