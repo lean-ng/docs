@@ -28,6 +28,7 @@
     "path": "dev-tooling",
     "title": "Development Tooling",
     "children": [
+      { "path": "cli", "title": "Angular CLI" },
       { "path": "debugging", "title": "Debugging" }
     ]
   }
