@@ -9,7 +9,13 @@ module.exports = {
     typography: {
       default: {
         css: {
-          maxWidth: '80ch'
+          maxWidth: '80ch',
+          h2: {
+            fontWeight: '600'
+          },
+          h3: {
+            fontWeight: '500'
+          }
         },
       },
     },
